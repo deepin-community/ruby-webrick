@@ -1,0 +1,27 @@
+Source: ruby-webrick
+Section: ruby
+Priority: optional
+Maintainer: Debian Ruby Team <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Uploaders: Cédric Boutillier <boutil@debian.org>
+Build-Depends: debhelper-compat (= 13),
+               gem2deb (>= 1)
+Standards-Version: 4.6.0
+Vcs-Git: https://salsa.debian.org/ruby-team/ruby-webrick.git
+Vcs-Browser: https://salsa.debian.org/ruby-team/ruby-webrick
+Homepage: https://github.com/ruby/webrick
+Testsuite: autopkgtest-pkg-ruby
+XS-Ruby-Versions: all
+Rules-Requires-Root: no
+
+Package: ruby-webrick
+Architecture: all
+XB-Ruby-Versions: ${ruby:Versions}
+Depends: ${misc:Depends},
+         ${ruby:Depends},
+         ${shlibs:Depends}
+Description: HTTP server toolkit in Ruby
+ WEBrick is an HTTP server toolkit that can be configured as an HTTPS server, a
+ proxy server, and a virtual-host server.
+ .
+ It used to be provided with the standard library of the Ruby interpreter, and
+ has been available only as a standalone gem since ruby3.0.

@@ -1,0 +1,12 @@
+ruby-webrick (1.7.0-2) unstable; urgency=medium
+
+  * Source-only upload to comply with migration rules to testing 
+
+ -- Cédric Boutillier <boutil@debian.org>  Wed, 17 Nov 2021 09:12:45 +0100
+
+ruby-webrick (1.7.0-1) unstable; urgency=medium
+
+  * Initial release of packaged standalone gem.
+  * Was part of Ruby standard library before Ruby 3.x
+
+ -- Cédric Boutillier <boutil@debian.org>  Wed, 17 Nov 2021 09:12:34 +0100
